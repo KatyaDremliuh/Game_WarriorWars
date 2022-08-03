@@ -1,4 +1,4 @@
-﻿namespace Game_WarriorWars
+﻿namespace Game_WarriorWars.Enum
 {
     public enum Faction
     {
