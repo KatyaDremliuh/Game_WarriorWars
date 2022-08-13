@@ -8,8 +8,8 @@ namespace Game_WarriorWars
 
         static void Main(string[] args)
         {
-            Warrior goodGuy = new Warrior("Bob", Faction.GoodGuy);
-            Warrior badGuy = new Warrior("Joe", Faction.BadGuy);
+            Warrior goodGuy = new Warrior("Genie", Faction.GoodGuy);
+            Warrior badGuy = new Warrior("Jafar", Faction.BadGuy);
 
             while (goodGuy.IsAlive && badGuy.IsAlive) // how long they're going to attack each other
             {
@@ -21,6 +21,8 @@ namespace Game_WarriorWars
                 {
                     badGuy.Attack(goodGuy);
                 }
+
+                Thread.Sleep(300);
             }
         }
     }
